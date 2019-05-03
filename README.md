@@ -1,4 +1,4 @@
-# Proyectos realizados con arduino, esp y raspberry
+# Proyectos realizados con arduino, esp32, esp8266 y raspberry 2018-2019
 
 ## Sistemas Informáticos. Raspberry PI
 Servidores montados en Raspbery PI [Ver hoja práctica](https://docs.google.com/presentation/d/1SLa452j-mQ8wyZaIyg5jDmb8VSSN3wDr2zAyWz1mZtg/edit?usp=sharing)
