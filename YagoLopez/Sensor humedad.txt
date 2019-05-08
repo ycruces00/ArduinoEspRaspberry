@@ -1,0 +1,36 @@
+#include <Adafruit_Sensor.h>
+
+#include <DHT.h>
+#include <DHT_U.h>
+
+#define DHTPIN 2     // Pin donde está conectado el sensor
+
+#define DHTTYPE DHT11   
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println("Iniciando...");
+  dht.begin();
+}
+
+float temperatura (float t){
+  delay(2000);
+  Serial.print("Temperatura: ");
+  Serial.print(t);
+  Serial.print(" *C ");
+}
+
+float humedad(float h){
+  
+  Serial.print("Humedad ");
+  Serial.print(h);
+  Serial.print(" %t");
+}
+
+void loop() {
+  float t = dht.readTemperature(); //Leemos la temperatura en grados Celsius
+  float h = dht.readHumidity(); //Leemos la Humedadz 
+  humedad(h);
+  temperatura(t);
+}
