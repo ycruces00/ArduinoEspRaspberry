@@ -12,5 +12,6 @@ Sistema de riego y control automatizado online [Ver hoja práctica](https://docs
 
 - [Yago Lopez Cameselle](https://github.com/Yagatus/PruebasArduino)
 - [Javier Alvarez Rial](https://github.com//)
+- [Tania Linares Boo](https://github.com/tanialeee/EjerciciosArduino)
 - [enlace a un subdirectorio de github, tu nombre](http://www.abc.net)
 - [enlace a un subdirectorio de github, tu nombre](http://www.abc.net)
