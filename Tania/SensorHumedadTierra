@@ -11,8 +11,10 @@ void loop()
   
    if(humedad < 500)
    {
-      Serial.println("Encendido");  
+      Serial.println("Planta húmeda");  
       //hacer las acciones necesarias
+   }else{
+   Serial.println("Planta seca");
    }
    delay(1000);
 }
