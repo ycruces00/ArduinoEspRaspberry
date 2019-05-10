@@ -1,0 +1,31 @@
+int valorSensor = 0;  
+boolean valor = false;
+boolean anterior;
+int digital = 3;
+
+
+void setup() {
+  Serial.begin(9600);
+  anterior = digitalRead(digital);
+}
+
+void loop() {
+  valorSensor = analogRead(A0);
+  Serial.println(valorSensor);
+  valor=digitalRead(digital);
+
+  if (valor==HIGH){
+    if (anterior == LOW) {
+      Serial.println("Fuego!!"); 
+      Serial.println(valorSensor);
+      anterior = HIGH;
+    }
+  }
+  else{
+    if (anterior == HIGH) {
+      Serial.println("Apagado");  
+      Serial.println(valorSensor);
+      anterior = LOW;
+    }
+  }
+ }
