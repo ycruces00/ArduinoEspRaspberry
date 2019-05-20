@@ -15,6 +15,9 @@ void loop()
       //hacer las acciones necesarias
    }else{
    Serial.println("Planta seca");
+ 
+  regar=true;
+  tiempoRiego=1000; //Milisegundos que se va a encender la bomba
    }
    delay(1000);
 }
